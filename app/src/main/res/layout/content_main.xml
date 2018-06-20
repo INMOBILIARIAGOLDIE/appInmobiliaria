@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/casa5"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:background="@mipmap/casa">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="129dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="-15dp"
+                android:background="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView5"
+                app:layout_constraintHorizontal_bias="0.007"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@mipmap/logooo" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="203dp"
+                android:layout_height="61dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="INMOBILIARIA GOLDIE "
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/casa3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scrollbarThumbHorizontal="@mipmap/images"
+            app:srcCompat="@mipmap/casa3" />
+
+        <SearchView
+            android:id="@+id/buscador"
+            android:layout_width="433dp"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+        </SearchView>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_center
+            android:background="@android:color/darker_gray"
+            android:fontFamily="serif"
+            android:text="VER PROPIEDADES"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:text="   @ 2018 inmobiliariagoldie.com
+                    Todos los derechos resevados"
+            android:textColor="@android:color/white"
+            android:visibility="visible"
+            tools:background="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@android:color/black"
+            android:text=" Terminos y condiciones de uso inmobiliariaGoldie.com es un portal de busqueda online que permite buscar informacion de venta,
+            alquiler y anticreto de todo tipo de inmuebles,tales como:casas,departamentos y condominios"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
