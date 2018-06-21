@@ -11,7 +11,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
 
 
-               Intent btnVer=new Intent(MainActivity.this,ListaPropiedades.class);
+               Intent btnVer=new Intent(MainActivity.this,Menu.class);
                startActivity(btnVer);
 
             }
@@ -75,7 +74,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;

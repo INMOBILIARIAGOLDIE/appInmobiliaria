@@ -20,8 +20,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ListaPropiedades"
-            android:label="@string/title_activity_lista_propiedades"
+            android:name=".Menu"
+            android:label="@string/title_activity_menu"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
