@@ -108,6 +108,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.ourlocation) {
 
         } else if (id == R.id.contactus) {
+            Intent intent=new Intent(this,contactos.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
 
